@@ -1,0 +1,114 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Main container */
+#main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+#main-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Loading and error messages */
+#loading-status,
+#error-message {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+#error-message {
+  color: red;
+}
+
+/* Post list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+li h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+li p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Pagination controls */
+#pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#pagination-controls button {
+  padding: 8px 12px;
+  margin: 0 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#pagination-controls button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+#pagination-controls button:hover:enabled {
+  background-color: #0056b3;
+}
+
+/* Page size controls */
+#page-size-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#page-size-label {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+#page-size-selector {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
